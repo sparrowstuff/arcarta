@@ -1,0 +1,33 @@
+.advantages {
+	padding: 0 0 11.06rem 0;
+	transition: opacity $transition-300, transform $transition-300;
+
+	@media (max-width: $vp-mobile) {
+		padding: 0 0 4rem;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		gap: 1.87rem;
+
+		@media (max-width: $vp-tablet) {
+			gap: 0.9rem;
+		}
+
+		@media (max-width: 35rem) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__list-item {
+		transition: scale $transition-300;
+
+		&:hover,
+		&:focus-visible {
+			outline: unset;
+			scale: 1.04;
+		}
+	}
+}

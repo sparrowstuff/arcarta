@@ -1,0 +1,28 @@
+.container {
+	max-width: 76.5rem;
+	width: 100%;
+	padding: 0 1.25rem;
+	margin: 0 auto;
+
+	@media (max-width: 55.6rem) {
+		padding: 0 1.87rem;
+		max-width: 55.6rem;
+	}
+
+	@media (max-width: 400px) {
+		max-width: 25rem;
+		padding: 0 0.93rem;
+	}
+
+	&--advantages {
+		padding: 0 11.9rem;
+
+		@media (max-width: 48rem) {
+			padding: 0 0.93rem;
+		}
+	}
+
+	&--no-padding {
+		padding: 0 0;
+	}
+}

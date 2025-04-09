@@ -1,0 +1,58 @@
+// colors
+
+$black: #000000;
+$black-light: #1a1918;
+$black-01: rgba(0, 0, 0, 0.1);
+$black-08: rgba(0, 0, 0, 0.08);
+$black-45: rgba(0, 0, 0, 0.45);
+$black-55: rgba(0, 0, 0, 0.55);
+$beige: #fff8ee;
+$beige-depp: #f9ede2;
+$white: #ffffff;
+$main: #322f2e;
+$main-link: #313131;
+$main-list: #333333;
+$main-article: #333333;
+$brown: #c47344;
+$pink: #f9a38f;
+$grey: #e1ded9;
+$grey-main: #dddddd;
+$grey-card: #fffaf2;
+$grey-light: #faf7f3;
+$grey-link: #d3d3d3;
+$green-deep: #32686f;
+
+// typography
+
+$roboto: 'Roboto', 'Arial', sans-serif;
+
+$rem-068: 0.68rem; // 11px
+$rem-075: 0.75rem; // 12px
+$rem-081: 0.81rem; // 13px
+$rem-085: 0.85rem; // 14px
+$rem-093: 0.93rem; // 15px
+$rem-1: 1rem; // 16px
+$rem-125: 1.25rem; // 20px
+$rem-131: 1.31rem; // 21px
+$rem-156: 1.56rem; // 25px
+$rem-175: 1.75rem; // 28px
+$rem-2: 2rem; //32px
+$rem-206: 2.06rem; // 33px
+$rem-25: 2.5rem; // 40px
+$rem-262: 2.62rem; // 42px
+$rem-325: 3.25rem; // 52px
+$rem-331: 3.31rem; // 53px
+$rem-337: 3.37rem; // 54px
+$rem-387: 3.87rem; // 62px
+$rem-437: 4.37rem; // 70px
+$rem-687: 6.87rem; // 110px
+$rem-743: 7.43rem; // 119px
+
+// viewport
+
+$vp-tablet: 1023px;
+$vp-mobile: 767px;
+
+// transition
+
+$transition-300: ease-in 0.3s;

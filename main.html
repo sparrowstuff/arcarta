@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Arcarta</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="main.js" type="module"></script>
+		<meta
+			name="description"
+			content="Arcarta - best service for Artist and Art"
+		/>
+		<link
+			rel="preload"
+			href="/arcarta/fonts/Roboto-Regular.woff"
+			as="font"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			href="/arcarta/fonts/Roboto-Regular.woff2"
+			as="font"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="/arcarta/favicon/favicon-96x96.png"
+			sizes="96x96"
+		/>
+		<link rel="icon" type="image/svg+xml" href="/arcarta/favicon/favicon.svg" />
+		<link rel="shortcut icon" href="/arcarta/favicon/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/arcarta/favicon/apple-touch-icon.png"
+		/>
+		<link rel="manifest" href="/arcarta/site.webmanifest" />
+		<style></style>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__main">
+					<a
+						class="header__main-link main-link"
+						href="#"
+						aria-label="go to main page"
+					>
+						<svg
+							class="header__main-link-icon"
+							width="140"
+							height="28"
+							aria-hidden="true"
+						>
+							<use xlink:href="images/sprite.svg#main-icon"></use>
+						</svg>
+					</a>
+					<div class="header__navigation">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a
+										class="nav__link navigation-link"
+										href="#"
+										aria-label="What is arcarta"
+										>What&nbsp;is&nbsp;arcarta?</a
+									>
+								</li>
+								<li class="nav__item">
+									<a
+										class="nav__link navigation-link"
+										href="#"
+										aria-label="Solutions for artists"
+										>Solutions</a
+									>
+								</li>
+								<li class="nav__item">
+									<a
+										class="nav__link navigation-link"
+										href="#"
+										aria-label="Resourses for artists"
+										>Resources</a
+									>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link navigation-link" href="#" aria-label="FAQ"
+										>FAQs</a
+									>
+								</li>
+								<li class="nav__item navigation-link">
+									<a class="nav__link" href="#" aria-label="Contacts"
+										>Contact</a
+									>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__btn-block">
+							<button
+								class="header__login-btn btn"
+								type="button"
+								aria-label="Login button"
+							>
+								Login
+							</button>
+							<button
+								class="header__start-btn btn"
+								type="button"
+								aria-label="Login button"
+							>
+								Get&nbsp;started
+							</button>
+						</div>
+					</div>
+					<button class="burger" type="button">
+						<span class="burger__top-line"></span>
+						<span class="burger__main-line"></span>
+						<span class="burger__bottom-line"></span>
+					</button>
+					<article class="header__menu">
+						<div class="header__navigation header__navigation--mobile">
+							<nav class="nav">
+								<ul class="nav__list">
+									<li class="nav__item">
+										<a
+											class="nav__link navigation-link"
+											href="#"
+											aria-label="What is arcarta"
+											>What&nbsp;is&nbsp;arcarta?</a
+										>
+									</li>
+									<li class="nav__item">
+										<a
+											class="nav__link navigation-link"
+											href="#"
+											aria-label="Solutions for artists"
+											>Solutions</a
+										>
+									</li>
+									<li class="nav__item">
+										<a
+											class="nav__link navigation-link"
+											href="#"
+											aria-label="Resourses for artists"
+											>Resources</a
+										>
+									</li>
+									<li class="nav__item">
+										<a
+											class="nav__link navigation-link"
+											href="#"
+											aria-label="FAQ"
+											>FAQs</a
+										>
+									</li>
+									<li class="nav__item navigation-link">
+										<a class="nav__link" href="#" aria-label="Contacts"
+											>Contact</a
+										>
+									</li>
+								</ul>
+							</nav>
+							<div class="header__btn-block">
+								<button
+									class="header__login-btn btn"
+									type="button"
+									aria-label="Login button"
+								>
+									Login
+								</button>
+								<button
+									class="header__start-btn btn"
+									type="button"
+									aria-label="Login button"
+								>
+									Get&nbsp;started
+								</button>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</header>
+		<section class="hero">
+			<h1 class="visually-hidden">Arcarta main info</h1>
+			<div class="container">
+				<div class="hero__main">
+					<div class="hero__heading">
+						<div class="hero__classify">
+							<div class="hero__classify-inner">
+								<span class="hero__new-article new-article">New</span>
+								<span class="hero__article">The Art Market Report</span>
+							</div>
+							<h2 class="hero__title">Rely&nbsp;on&nbsp;us</h2>
+						</div>
+						<div class="hero__description-block">
+							<p class="hero__description">
+								Our Customer Due Diligence platform helps you avoid fines
+								or&nbsp;losing clients due to&nbsp;AML while protecting you from
+								cybercrime.
+							</p>
+							<a
+								class="hero__more-link"
+								href="#"
+								aria-label="More about project"
+								>Learn more</a
+							>
+						</div>
+					</div>
+					<div class="hero__companies">
+						<div class="hero__pictures-block">
+							<picture
+								class="hero__company-pic hero__company-pic--animation-first"
+							>
+								<source type="image/webp" srcset="images/hero/colnaghi.webp" />
+								<img
+									class="hero__company-img"
+									src="images/hero/colnaghi.png"
+									srcset="images/hero/colnaghi@2x.png 2x"
+									alt="colnaghi"
+									width="255"
+									height="98"
+									loading="lazy"
+								/>
+							</picture>
+							<picture
+								class="hero__company-pic hero__company-pic--animation-second"
+							>
+								<source
+									type="image/webp"
+									srcset="images/hero/luxembourg.webp"
+								/>
+								<img
+									class="hero__company-img"
+									src="images/hero/luxembourg.png"
+									srcset="images/hero/luxembourg@2x.png 2x"
+									alt="luxembourg"
+									width="255"
+									height="98"
+									loading="lazy"
+								/>
+							</picture>
+							<picture
+								class="hero__company-pic hero__company-pic--animation-third"
+							>
+								<source type="image/webp" srcset="images/hero/tomasso.webp" />
+								<img
+									class="hero__company-img"
+									src="images/hero/tomasso.png"
+									srcset="images/hero/tomasso@2x.png 2x"
+									alt="tomasso"
+									width="255"
+									height="98"
+									loading="lazy"
+								/>
+							</picture>
+							<picture
+								class="hero__company-pic hero__company-pic--animation-fourth"
+							>
+								<source type="image/webp" srcset="images/hero/crg.webp" />
+								<img
+									class="hero__company-img"
+									src="images/hero/crg.png"
+									srcset="images/hero/crg@2x.png 2x"
+									alt="cristea roberts gallery"
+									width="255"
+									height="98"
+									loading="lazy"
+								/>
+							</picture>
+						</div>
+						<a class="hero__link" href="#">
+							<span class="hero__link-text">What is&nbsp;arcarta?</span>
+							<svg
+								class="hero__link-icon"
+								width="20"
+								height="20"
+								aria-hidden="true"
+							>
+								<use xlink:href="images/sprite.svg#stripe-right"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<article class="banner hidden-block">
+			<div class="container container--no-padding">
+				<picture class="banner__picture">
+					<source type="image/webp" srcset="images/banner/banner.webp" />
+					<img
+						class="banner__img"
+						src="images/banner/banner.png"
+						srcset="images/banner/banner@2x.png"
+						alt="gallery-image"
+						width="1440"
+						height="670"
+					/>
+				</picture>
+			</div>
+		</article>
+		<section class="advantages hidden-block">
+			<h2 class="visually-hidden">Our advantages</h2>
+			<div class="container container--advantages">
+				<ul class="advantages__list">
+					<li class="advantages__list-item">
+						<article class="art-card">
+							<div class="art-card__main">
+								<picture class="art-card__picture">
+									<source type="image/webp" srcset="images/cards/card-1.webp" />
+									<img
+										class="art-card__img"
+										src="images/cards/card-1.png"
+										srcset="images/cards/card-1@2x.png 2x"
+										alt="Art For Dealers"
+										width="223"
+										height="220"
+									/>
+								</picture>
+								<div class="art-card__inner">
+									<div class="art-card__heading">
+										<h2 class="art-card__name">For Art Dealers</h2>
+										<p class="art-card__description">
+											Galleries and independent art dealers
+										</p>
+									</div>
+									<a
+										class="art-card__link navigation-link navigation-link--card"
+										href="#"
+										>Learn&nbsp;More</a
+									>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="advantages__list-item">
+						<article class="art-card">
+							<div class="art-card__main">
+								<picture class="art-card__picture">
+									<source type="image/webp" srcset="images/cards/card-2.webp" />
+									<img
+										class="art-card__img"
+										src="images/cards/card-2.png"
+										srcset="images/cards/card-2@2x.png 2x"
+										alt="For Advisors"
+										width="223"
+										height="220"
+									/>
+								</picture>
+								<div class="art-card__inner">
+									<div class="art-card__heading">
+										<h2 class="art-card__name">For Advisors</h2>
+										<p class="art-card__description">
+											Advisors, agents&nbsp;and consultants
+										</p>
+									</div>
+									<a
+										class="art-card__link navigation-link navigation-link--card"
+										href="#"
+										>Learn&nbsp;More</a
+									>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="advantages__list-item">
+						<article class="art-card">
+							<div class="art-card__main">
+								<picture class="art-card__picture">
+									<source type="image/webp" srcset="images/cards/card-3.webp" />
+									<img
+										class="art-card__img"
+										src="images/cards/card-3.png"
+										srcset="images/cards/card-3@2x.png 2x"
+										alt="For Auctioneers"
+										width="220"
+										height="220"
+									/>
+								</picture>
+								<div class="art-card__inner">
+									<div class="art-card__heading">
+										<h2 class="art-card__name">For Auctioneers</h2>
+										<p class="art-card__description">
+											Online&nbsp;and offline auctioneers
+										</p>
+									</div>
+									<a
+										class="art-card__link navigation-link navigation-link--card"
+										href="#"
+										>Learn&nbsp;More</a
+									>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="advantages__list-item">
+						<article class="art-card">
+							<div class="art-card__main">
+								<picture class="art-card__picture">
+									<source type="image/webp" srcset="images/cards/card-4.webp" />
+									<img
+										class="art-card__img"
+										src="images/cards/card-4.png"
+										srcset="images/cards/card-4@2x.png 2x"
+										alt="For Buyers and Collectors"
+										width="220"
+										height="220"
+									/>
+								</picture>
+								<div class="art-card__inner">
+									<div class="art-card__heading">
+										<h2 class="art-card__name">
+											For Buyers &amp;&nbsp;Collectors
+										</h2>
+										<p class="art-card__description">
+											Receiving Invoices, making card payments and sending
+											your&nbsp;ID and address documents
+										</p>
+									</div>
+									<a
+										class="art-card__link navigation-link navigation-link--card"
+										href="#"
+										>Learn&nbsp;More</a
+									>
+								</div>
+							</div>
+						</article>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="banner banner--anti hidden-block">
+			<h2 class="visually-hidden">
+				Take the quiz to know that does Anti-money Laundering affects you
+			</h2>
+			<div class="container">
+				<div class="banner__main">
+					<article class="banner__book">
+						<div class="banner__book-inner">
+							<span class="banner__book-number">01</span>
+							<div class="banner__book-heading">
+								<svg class="banner__pc-icon" width="64" aria-hidden="true">
+									<use xlink:href="images/sprite.svg#pc"></use>
+								</svg>
+								<h3 class="banner__book-title">Compliance Quiz</h3>
+								<a
+									class="banner__book-link"
+									href="#"
+									aria-label="Start the QUIZ"
+								>
+									<span class="banner__book-link-text">Begin</span>
+									<svg
+										class="banner__book-link-icon"
+										width="20"
+										height="20"
+										aria-hidden="true"
+									>
+										<use
+											xlink:href="images/sprite.svg#stripe-right-white"
+										></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+					<div class="banner__info">
+						<div class="banner__info-heading">
+							<span
+								class="banner__article new-article new-article--not-positioned"
+								>New</span
+							>
+							<h2 class="banner__title">
+								Does Anti-money Laundering affect you?
+							</h2>
+						</div>
+						<div class="banner__description-block">
+							<p class="banner__description">
+								A&nbsp;short, interactive quiz to&nbsp;check if&nbsp;your art
+								business is&nbsp;affected by&nbsp;5AMLD&nbsp;regulation.
+							</p>
+							<a
+								class="banner__quiz-link navigation-link navigation-link--banner"
+								href="#"
+								aria-label="Begin quiz"
+								>Take the Quiz</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<article class="art-world hidden-block">
+			<h2 class="visually-hidden">art-world insight</h2>
+			<div class="container">
+				<div class="art-world__main">
+					<picture class="art-world__picture">
+						<source type="image/webp" srcset="images/banner/art-world.webp" />
+						<img
+							class="art-world__img"
+							src="images/banner/art-world.png"
+							srcset="images/banner/art-world@2x.png 2x"
+							alt="art-world banner pic"
+							width="346"
+							height="325"
+						/>
+					</picture>
+					<div class="art-world__inner">
+						<div class="art-world__heading">
+							<h3 class="art-world__title">Art world insight.</h3>
+							<p class="art-world__description">
+								Receive our newsletter direct to&nbsp;your inbox to&nbsp;follow
+								updates to&nbsp;legislation and the&nbsp;EU art-market&rsquo;s
+								response.
+							</p>
+						</div>
+						<form
+							class="art-world-form"
+							action="#"
+							name="email-form"
+							method="post"
+						>
+							<label for="email-form" class="art-world-form__label">
+								<input
+									type="email"
+									id="email-form"
+									class="art-world-form__mail-input"
+									placeholder="Your email"
+								/>
+							</label>
+							<button class="art-world-form__submit-btn" type="submit">
+								<svg
+									class="art-world-form__icon"
+									width="29"
+									height="29"
+									aria-hidden="true"
+								>
+									<use xlink:href="images/sprite.svg#stripe-ArtWorld"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</article>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__main">
+					<div class="footer__left-menu">
+						<div class="footer__link-block">
+							<a
+								class="footer__main-link main-link"
+								href="#"
+								aria-label="Go to main page"
+								><svg
+									class="footer__main-link-icon"
+									width="150"
+									height="30"
+									aria-hidden="true"
+								>
+									<use xlink:href="images/sprite.svg#main-icon"></use>
+								</svg>
+							</a>
+							<p class="footer__description">
+								Our Customer Due Diligence platform helps you avoid fines
+								or&nbsp;losing clients due to&nbsp;AML while protecting you from
+								cybercrime.
+							</p>
+						</div>
+						<div class="footer__service-block">
+							<span class="footer__service-name"
+								>Approved Service Provider</span
+							>
+							<a class="footer__service-link" href="#" aria-label="Bada site">
+								<svg
+									class="footer__service-icon"
+									width="76"
+									height="76"
+									aria-hidden="true"
+								>
+									<use xlink:href="images/sprite.svg#bada"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="footer__partnership-block">
+							<div class="footer__partnership-inner">
+								<span class="footer__partnership-name"
+									>In&nbsp;Partnership with</span
+								>
+								<a
+									class="footer__partnership-link"
+									href="#"
+									aria-label="London Art Week site"
+								>
+									<svg
+										class="footer__partnership-icon"
+										width="158"
+										height="67"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#law"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="footer__license">
+								<span class="footer__license-text"
+									>Registered with the Information Commissioner&rsquo;s Office
+									(ICO) Registration number: ZA679248</span
+								>
+								<span class="footer__license-name"
+									>&copy;&nbsp;Arc-Pay Ltd 2021</span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="footer__right-menu">
+						<nav class="nav nav--footer">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<h3 class="nav__heading">Links</h3>
+									<div class="nav__links-block">
+										<a class="nav__link" href="#">Home</a
+										><a class="nav__link" href="#">About&nbsp;us</a
+										><a class="nav__link" href="#">Success&nbsp;Stories</a
+										><a class="nav__link" href="#">Why&nbsp;arcarta</a
+										><a class="nav__link" href="#">Success&nbsp;Stories</a
+										><a class="nav__link" href="#">FAQ&rsquo;s</a
+										><a class="nav__link" href="#">Contact&nbsp;Us</a
+										><a class="nav__link" href="#">Join</a
+										><a class="nav__link" href="#">Invite</a
+										><a class="nav__link" href="#">Compliance&nbsp;Quiz</a>
+										<a class="nav__link" href="#">ID&nbsp;Document Quiz</a>
+									</div>
+								</li>
+								<li class="nav__item">
+									<h3 class="nav__heading">Solutions</h3>
+									<div class="nav__links-block">
+										<a class="nav__link" href="#">For&nbsp;Galleries</a
+										><a class="nav__link" href="#">For&nbsp;Advisors</a
+										><a class="nav__link" href="#">For&nbsp;Auctioneers</a
+										><a class="nav__link" href="#"
+											>For&nbsp;Secure&nbsp;Payments</a
+										><a class="nav__link" href="#"
+											>For&nbsp;Buyers &amp;&nbsp;Collectors</a
+										><a class="nav__link" href="#">Online AML&nbsp;Training</a>
+									</div>
+								</li>
+								<li class="nav__item">
+									<h3 class="nav__heading">Resources</h3>
+									<div class="nav__links-block">
+										<a class="nav__link" href="#">Articles</a
+										><a class="nav__link" href="#">Resources</a
+										><a class="nav__link" href="#">Help&nbsp;Center</a
+										><a class="nav__link" href="#">The Bigger&nbsp;Picture</a
+										><a class="nav__link" href="#">Login</a
+										><a class="nav__link" href="#">Brand&nbsp;Assets</a
+										><a class="nav__link" href="#"
+											>The&nbsp;Art&nbsp;Market&nbsp;Report
+											<span
+												class="nav__new-article new-article new-article--not-positioned"
+												>New</span
+											></a
+										>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__socials">
+					<svg
+						class="footer__people-icon"
+						width="161"
+						height="76"
+						aria-hidden="true"
+					>
+						<use xlink:href="images/sprite.svg#people"></use>
+					</svg>
+					<article class="socials">
+						<ul class="socials__list">
+							<li class="socials__item">
+								<a class="socials__link socials__privacy-terms" href="#"
+									>Privacy&nbsp;&amp;&nbsp;Terms</a
+								>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="#" aria-label="Twitter link"
+									><svg
+										class="socials__icon"
+										width="22"
+										height="22"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="#" aria-label="Instagram link"
+									><svg
+										class="socials__icon"
+										width="23"
+										height="23"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="#" aria-label="YouTube link"
+									><svg
+										class="socials__icon"
+										width="22"
+										height="22"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#youtube"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<!-- <script>
+		const burgerBtn = document.querySelector('.burger')
+		const burgerMenu = document.querySelector('.header__navigation--mobile')
+		const heroEl = document.querySelector('.hero')
+
+		burgerBtn.addEventListener('click', e => {
+			burgerMenu.classList.toggle('show')
+			burgerBtn.classList.toggle('transform')
+		})
+
+		const artWorldForm = document.querySelector('.art-world-form')
+		const artWorldInput = document.querySelector('.art-world-form__mail-input')
+
+		artWorldForm.addEventListener('submit', e => {
+			e.preventDefault()
+			if (artWorldInput.value === '') {
+				alert('Введите email правильно (address@.com)')
+			} else {
+				console.log('Форма отработала, убрать preventDefault')
+				artWorldInput.value = ''
+				artWorldInput.style.backgroundColor = 'transparent'
+			}
+		})
+
+		artWorldForm.addEventListener('keydown', e => {
+			if (e.key === 'Enter') {
+				e.preventDefault()
+				console.log('Форма отработала по клавише enter')
+				artWorldInput.value = ''
+				artWorldInput.style.backgroundColor = 'transparent'
+			}
+		})
+
+		artWorldInput.addEventListener('focus', e => {
+			artWorldInput.style.backgroundColor = '#dddddd'
+		})
+
+		artWorldInput.addEventListener('blur', e => {
+			artWorldInput.style.backgroundColor = 'transparent'
+		})
+
+		document.addEventListener('DOMContentLoaded', function () {
+			const blocks = document.querySelectorAll('.hidden-block')
+
+			function visibleFunc(block) {
+				const rect = block.getBoundingClientRect()
+				const windowHeight = window.innerHeight
+
+				if (rect.top < windowHeight - 200) {
+					block.classList.add('hidden-block--visible')
+					block.classList.remove('hidden-block')
+				}
+			}
+
+			document.addEventListener('scroll', function () {
+				blocks.forEach(block => {
+					if (block) visibleFunc(block)
+				})
+			})
+		})
+	</script> -->
+</html>

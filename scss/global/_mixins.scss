@@ -1,0 +1,23 @@
+@mixin vp-1023 {
+	@media (max-width: $vp-tablet) {
+		@content;
+	}
+}
+
+@mixin vp-767 {
+	@media (max-width: $vp-mobile) {
+		@content;
+	}
+}
+
+@mixin flex($direction: column) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: center;
+}
+
+@mixin flexStart($direction: column) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: flex-start;
+}

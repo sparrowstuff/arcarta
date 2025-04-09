@@ -1,0 +1,119 @@
+.footer {
+	padding: 0 0 1.93rem 0;
+	$root: &;
+
+	&__main {
+		@include flexStart(row);
+		gap: min(9vw, 11.87rem);
+	}
+
+	&__left-menu {
+		@include flexStart;
+		gap: 1.87rem;
+	}
+
+	&__link-block {
+		@include flexStart;
+		gap: 1.18rem;
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: $rem-081;
+		line-height: $rem-125;
+		color: $main-link;
+
+		max-width: 19.56rem;
+
+		@media (max-width: 42rem) {
+			text-align: center;
+		}
+	}
+
+	&__service-block {
+		@include flexStart;
+		gap: 0.62rem;
+	}
+
+	&__service-name {
+		font-weight: 500;
+		font-size: $rem-081;
+		line-height: $rem-125;
+		color: $main-link;
+	}
+
+	&__service-link,
+	&__partnership-link {
+		transition: scale $transition-300;
+		&:hover,
+		&:focus-visible {
+			outline: unset;
+
+			scale: 1.1;
+		}
+	}
+
+	&__partnership-block {
+		@include flexStart;
+		gap: 1.25rem;
+	}
+
+	&__partnership-inner {
+		@include flexStart;
+		gap: 0.62rem;
+		margin-top: 0.62rem;
+	}
+
+	&__partnership-name {
+		font-weight: 500;
+		font-size: $rem-075;
+		line-height: $rem-125;
+		color: $main-link;
+	}
+
+	&__license {
+		@include flexStart;
+		gap: 1.25rem;
+	}
+
+	&__license-text,
+	&__license-name {
+		font-weight: 400;
+		font-size: $rem-081;
+		line-height: $rem-125;
+		color: $grey-link;
+
+		max-width: 29vw;
+
+		@media (max-width: 42rem) {
+			text-align: center;
+			max-width: unset;
+		}
+	}
+
+	&__socials {
+		@include flex(row);
+		align-items: flex-end;
+		justify-content: space-between;
+
+		@media (max-width: 42rem) {
+			@include flex;
+			gap: 1rem;
+			margin-top: 1rem;
+		}
+	}
+
+	// вынесены блоки с одинаковым позиционированием при конкретной ширине экрана:
+
+	&__main,
+	&__left-menu,
+	&__link-block,
+	&__service-block,
+	&__partnership-block,
+	&__partnership-inner,
+	&__license {
+		@media (max-width: 42rem) {
+			@include flex;
+		}
+	}
+}

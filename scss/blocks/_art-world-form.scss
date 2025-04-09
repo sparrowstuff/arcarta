@@ -1,0 +1,43 @@
+.art-world-form {
+	$root: &;
+	position: relative;
+
+	&__mail-input {
+		padding: 0.75rem 3.37rem 0.75rem 1.93rem;
+		border-radius: 0.62rem;
+		width: 23.75rem;
+		height: 3.43rem;
+		box-shadow: 0px 1px 12px 0px $black-01;
+		background-color: $white;
+		border: unset;
+
+		font-weight: 500;
+		font-size: $rem-125;
+		line-height: $rem-2;
+		color: $black;
+
+		&::placeholder {
+			font-weight: 500;
+			font-size: $rem-125;
+			line-height: $rem-2;
+			color: $black-45;
+		}
+
+		@media (max-width: 32.5rem) {
+			width: 74vw;
+		}
+	}
+
+	&__submit-btn {
+		background-color: transparent;
+		border: unset;
+		@include flex;
+		cursor: pointer;
+		z-index: 1;
+
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0.56rem;
+	}
+}

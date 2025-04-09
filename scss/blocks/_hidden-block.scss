@@ -1,0 +1,9 @@
+.hidden-block {
+	opacity: 0;
+	transform: translateY(4rem);
+
+	&--visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

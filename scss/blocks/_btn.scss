@@ -1,0 +1,41 @@
+.btn {
+	padding: 0.81rem 1.75rem 0.81rem 1.75rem;
+	border-radius: 3.12rem;
+	border: unset;
+	background-color: transparent;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+
+	font-weight: 700;
+	font-size: $rem-085;
+	line-height: $rem-125;
+	color: $main;
+	transition: color $transition-300;
+	z-index: 1;
+
+	&::after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+		transition: clip-path $transition-300, background-color $transition-300;
+		z-index: -1;
+	}
+
+	&:hover,
+	&:focus-visible {
+		outline: unset;
+		color: $white;
+
+		&::after {
+			clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+			background-color: $brown;
+		}
+	}
+}

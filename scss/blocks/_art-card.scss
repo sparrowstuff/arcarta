@@ -1,0 +1,48 @@
+.art-card {
+	$root: &;
+	border-radius: 0.625rem;
+	border: 1px solid $grey-main;
+	overflow: hidden;
+	max-width: 31rem;
+	height: 100%;
+	background-color: $grey-card;
+	box-shadow: 1px 1px 20px 0px $black-08;
+
+	&__main {
+		@include flex;
+		gap: 1.62rem;
+		padding: 3.18rem 1.62rem 2.12rem 2.18rem;
+		height: 100%;
+
+		@media (max-width: 48rem) {
+			padding: 0.9rem;
+		}
+	}
+
+	&__inner {
+		@include flex;
+		gap: 1.43rem;
+		height: 100%;
+	}
+
+	&__heading {
+		@include flex;
+		gap: 1rem;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: clamp($rem-1, 7vw, $rem-262);
+		line-height: $rem-325;
+		color: $main;
+
+		text-align: center;
+	}
+
+	&__description {
+		font-size: $rem-1;
+		line-height: $rem-175;
+		color: $main;
+		text-align: center;
+	}
+}

@@ -1,0 +1,43 @@
+.burger {
+	width: 1.87rem;
+	height: 1.2rem;
+	cursor: pointer;
+	position: relative;
+	display: none;
+
+	opacity: 0;
+	animation: heroLinkFadeIn 1s ease-in forwards 0.5s;
+
+	@media (max-width: 55.6rem) {
+		display: block;
+	}
+
+	background-color: transparent;
+	border: unset;
+
+	&__main-line,
+	&__top-line,
+	&__bottom-line {
+		width: 100%;
+		height: 0.12rem;
+		background-color: $black;
+		transition: transform $transition-300, opacity $transition-300;
+		position: absolute;
+	}
+
+	&__main-line {
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+	}
+
+	&__top-line {
+		top: 0;
+		left: 0;
+	}
+
+	&__bottom-line {
+		bottom: 0;
+		left: 0;
+	}
+}

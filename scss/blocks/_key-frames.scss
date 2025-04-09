@@ -1,0 +1,77 @@
+@keyframes headerLinkFadeIn {
+	0% {
+		opacity: 0;
+		transform: translateX(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes navLinkFadeIn {
+	0% {
+		opacity: 0;
+		transform: translatY(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes heroTitleFadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes heroDescriptionFadeIn {
+	0% {
+		opacity: 0;
+		transform: translateX(-1.5rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes heroLinkFadeIn {
+	0% {
+		opacity: 0;
+		scale: 0.8;
+	}
+
+	100% {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+@keyframes heroCompanyImgFadeIn1 {
+	0% {
+		opacity: 0;
+		transform: translateY(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes heroCompanyImgFadeIn2 {
+	0% {
+		opacity: 0;
+		transform: translateY(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

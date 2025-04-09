@@ -1,0 +1,65 @@
+.socials {
+	$root: &;
+
+	&__list {
+		@include flex(row);
+		gap: 0.62rem;
+	}
+
+	&__item {
+		@include flex(row);
+	}
+
+	&__link {
+		position: relative;
+
+		&::after {
+			content: '';
+			width: 100%;
+			height: 0.06rem;
+			position: absolute;
+			bottom: -0.02rem;
+			left: 0;
+			clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+			background-color: $black;
+			transition: clip-path $transition-300;
+		}
+	}
+
+	&__privacy-terms {
+		font-weight: 400;
+		font-size: $rem-081;
+		line-height: $rem-125;
+		color: $grey-link;
+
+		margin-right: 0.62rem;
+		transition: color $transition-300;
+
+		&:hover,
+		&:focus-visible {
+			outline: unset;
+			color: $black;
+		}
+	}
+
+	&__icon {
+		color: $black;
+		transition: color $transition-300, scale $transition-300;
+	}
+
+	&__link {
+		&:hover,
+		&:focus-visible {
+			outline: unset;
+
+			&::after {
+				clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+			}
+
+			#{$root}__icon {
+				color: $main-link;
+				scale: 1.1;
+			}
+		}
+	}
+}

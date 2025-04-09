@@ -1,0 +1,79 @@
+.header {
+	$root: &;
+	padding: 1.93rem 3.12rem 1.93rem;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: $beige;
+	z-index: 5;
+
+	@media (max-width: $vp-tablet) {
+		padding: 1.932rem 0 1.93rem 0;
+	}
+
+	&__main {
+		@include flex(row);
+		justify-content: space-between;
+		gap: min(1vw, 1.25rem);
+	}
+
+	&__main-link {
+		opacity: 0;
+		animation: headerLinkFadeIn 1s ease-in forwards;
+	}
+
+	&__navigation {
+		@include flex(row);
+		justify-content: space-between;
+		gap: min(1vw, 2.62rem);
+
+		@media (max-width: 890px) {
+			display: none;
+		}
+	}
+
+	&__btn-block {
+		@include flex(row);
+		gap: 0.12rem;
+
+		opacity: 0;
+		animation: heroLinkFadeIn 1s ease-in forwards 2s;
+	}
+
+	&__menu {
+		position: absolute;
+		top: 74%;
+		right: 5%;
+		z-index: 100;
+		pointer-events: none;
+
+		@media (max-width: 34.37rem) {
+			right: 7%;
+		}
+	}
+
+	&__navigation--mobile {
+		@include flex;
+		gap: 0.5rem;
+		border: 0.1rem solid $brown;
+		border-radius: 1.25rem;
+		padding: 0.5rem;
+		background-color: $white;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity $transition-300;
+
+		& .nav__list {
+			@include flex;
+		}
+
+		#{$root}__start-btn,
+		#{$root}__login-btn {
+			&::after {
+				z-index: -1;
+			}
+		}
+	}
+}

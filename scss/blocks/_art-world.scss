@@ -1,0 +1,65 @@
+.art-world {
+	padding: 0 0 9.12rem 0;
+	transition: opacity $transition-300, transform $transition-300;
+
+	@media (max-width: $vp-mobile) {
+		padding: 0 0 4rem;
+	}
+
+	&__main {
+		@include flex(row);
+		justify-content: center;
+		gap: 3.18rem;
+		padding: 2.68rem 3.75rem 2.81rem 3.75rem;
+		background-color: $grey-light;
+		border-radius: 0.62rem;
+
+		@media (max-width: 51.87rem) {
+			flex-direction: column;
+		}
+	}
+
+	&__inner {
+		@include flex;
+		align-items: flex-start;
+		gap: 1.87rem;
+
+		@media (max-width: 51.87rem) {
+			align-items: center;
+		}
+	}
+
+	&__heading {
+		@include flex;
+		align-items: flex-start;
+		gap: 1.5rem;
+
+		@media (max-width: 51.87rem) {
+			align-items: center;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: clamp($rem-131, 7vw, $rem-25);
+		line-height: $rem-337;
+		color: $black-light;
+
+		@media (max-width: 51.87rem) {
+			text-align: center;
+		}
+	}
+
+	&__description {
+		font-size: $rem-125;
+		line-height: $rem-2;
+		color: $main;
+
+		max-width: 34rem;
+
+		@media (max-width: 51.87rem) {
+			text-align: center;
+			font-size: $rem-1;
+		}
+	}
+}
