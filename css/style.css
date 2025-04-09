@@ -443,7 +443,6 @@ ol {
   align-items: center;
   justify-content: space-between;
   gap: min(1vw, 1.25rem);
-  width: 90vw;
 }
 .header__main-link {
   opacity: 0;
@@ -456,7 +455,7 @@ ol {
   justify-content: space-between;
   gap: min(1vw, 2.62rem);
 }
-@media (max-width: 890px) {
+@media (max-width: 55.62rem) {
   .header__navigation {
     display: none;
   }
